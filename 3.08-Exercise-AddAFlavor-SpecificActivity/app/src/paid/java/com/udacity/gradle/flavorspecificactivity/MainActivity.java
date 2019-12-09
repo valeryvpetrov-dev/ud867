@@ -41,14 +41,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-
-        Context context = this;
-        CharSequence text = this.getString(R.string.toast_text);
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-
-
+        Toast.makeText(this, "Paid action", Toast.LENGTH_LONG).show();
     }
 }
